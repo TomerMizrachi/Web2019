@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form-EX4</title>
+    <link rel="stylesheet" href="includes/style.css">
+</head>
+<body>
+    <main>
+        <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get" autocomplete="on">
+            <!--- <label> FNAME: <input> </label>-->
+            
+            <br><label>Full Name:<input type="text" name="fullName" value=""></label><br>
+            <label>Password:<input type="password" name="pass" value="" pattern=".{6,}"
+                    title="Six or more characters"></label><br>
+            <label>Email:<input type="email" name="mail" value=""
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></label><br>
+            <label>Website:<input type="url" name="website" value=""></label><br>
+            <label>Phone:<input type="tel" required name="phone" name="phone" value=""></label><br>
+            <label>Coffee: <input type="number" name="coffee" value="0" min="0"></label><br>
+            <label>temper: 0 <input type="range" name="temper" value="" min="0" max="100"> 100 </label><br>
+            <label>Address: <input type="text" name="address" value=""></label>
+            <fieldset>
+                <legend>
+                    <h3>Hobbies:</h3>
+                </legend>
+                <label>Reading books: <input type="checkbox" name="interests[]" value="Reading Books."></label><br>
+                <label>Soccer: <input type="checkbox" name="interests[]" value="Soccer."></label><br>
+                <label>Coding: <input type="checkbox" name="interests[]" value="Coding."></label><br>
+                <label>Swimming: <input type="checkbox" name="interests[]" value="Swimming."></label>
+                <label><input type="hidden" name="interests[]" value="you have no Hobbies."></label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Please chose gender:</h3>
+                </legend>
+                <label>Male:<input type="radio" name="gender" value="Male"></label><br>
+                <label>Female:<input type="radio" name="gender" value="Female"></label>
+            </fieldset>
+            <label>Age:
+                <select name="age">
+                    <option value="18">18</option>
+                    <option value="19" selected>19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                </select>
+            </label><br>
+            <div class="clear"></div>
+            <input id="sub" type="submit" value="Submit">
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header,
+nav,
+div,
+footer,
+aside,
+section,    
+main{
+    display: block;
+}
+form{
+    width: 500px
+}
+form > label{
+    display: block;
+    margin-left: 40px;
+}
+form label input{
+    float: right;
+} 
+fieldset{
+    margin: 35px;
+    margin-right: 0px;
+}
+fieldset > label{
+    margin: 5px;
+}
+form label [type=range]{
+ float: none;
+}
+.clear { 
+    clear:both; 
+ }
+#sub{
+    margin-left: 40px;
+}
+footer{
+    margin: 20px;
+}
